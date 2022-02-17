@@ -51,7 +51,7 @@ Any message which _does_ start with "Donate" will attempt to generate a Stripe i
 
 ## Privacy Note
 
-No [PII](https://en.wikipedia.org/wiki/Personal_data) is stored directly in this app, but customers' phone numbers will be in your Twilio message history and WhatsApp names and phone numbers are stored in your Stripe invoice history. This flow would therefore need a link to a privacy policy if used in a country where GDPR or similar laws apply.
+No [PII](https://en.wikipedia.org/wiki/Personal_data) is stored directly in this app, but donors' phone numbers will be in your Twilio message history and WhatsApp names and phone numbers are stored in your Stripe invoice history. This flow would therefore need a link to a privacy policy if used in a country where GDPR or similar laws apply.
 
 ## See Also
 
