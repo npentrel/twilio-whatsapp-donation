@@ -45,6 +45,10 @@ Sending any message which does not start with "Donate" to the WhatsApp number wi
 
 You can customise this for any number and with any text (remembering to URL encode it), and use any QR code generator you like to encode your URL. I used [https://www.qr-code-generator.com/](https://www.qr-code-generator.com/).
 
+## Privacy Note
+
+No [PII](https://en.wikipedia.org/wiki/Personal_data) is stored directly in this app, but customers' phone numbers will be in your Twilio message history and WhatsApp names and phone numbers are stored in your Stripe invoice history. This flow would therefore need a link to a privacy policy if used in a country where GDPR or similar laws apply.
+
 ## See Also
 
   - A similar flow based on SMS rather than WhatsApp [here](https://www.twilio.com/code-exchange/mobile-payment-sms-stripe)
