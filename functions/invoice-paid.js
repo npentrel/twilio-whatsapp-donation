@@ -28,6 +28,8 @@ exports.handler = async function(context, event, callback) {
 
      // When we created the invoice we set the phone number 
      // but we need to add prefix of "whatsapp:"
+     // Note: this message will not be sent unless the invoice is paid within 24 hours,
+     //       as the WhatsApp session will have expired. (https://www.twilio.com/docs/whatsapp/key-concepts#the-24-hour-window-or-24-hour-session)
      if (invoice.customer_phone){
         const client = context.getTwilioClient();
         const message = await client.messages.create({
