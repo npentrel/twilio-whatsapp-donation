@@ -45,7 +45,7 @@ Sending any message which does not start with "Donate" to the WhatsApp number wi
 
 You can customise this for any number and with any text (remembering to URL encode it), and use any QR code generator you like to encode your URL. I used [https://www.qr-code-generator.com/](https://www.qr-code-generator.com/).
 
-#### Variations
+### Variations
 
 Any message which _does_ start with "Donate" will attempt to generate a Stripe invoice. The code as presented supports three currencies (GBP, USD and EUR), so as well as clicking on the button to send that message, you could have QR codes which immediately populate a message like "Donate €4.99" etc.
 
