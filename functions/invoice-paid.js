@@ -26,7 +26,7 @@ exports.handler = async function(context, event, callback) {
      const customerName = invoice.customer_name || '';
      const donationAmount = currencies[invoice.currency.toUpperCase()] + invoice.total / 100;
 
-     // When we created the invoice we set the phone number 
+     // When we created the invoice we set the phone number
      // but we need to add prefix of "whatsapp:"
      // Note: this message will not be sent unless the invoice is paid within 24 hours,
      //       as the WhatsApp session will have expired. (https://www.twilio.com/docs/whatsapp/key-concepts#the-24-hour-window-or-24-hour-session)
@@ -35,7 +35,7 @@ exports.handler = async function(context, event, callback) {
         const message = await client.messages.create({
           to: "whatsapp:" + invoice.customer_phone,
           from: "whatsapp:" + context.TWILIO_PHONE_NUMBER,
-          body: `Thank you ${customerName}  ❤️ To find out how your ${donationAmount} has helped, please visit https://twilio.org ` 
+          body: `Thank you ${customerName}  ❤️ To find out how your ${donationAmount} has helped, please visit https://twilio.org `
         });
      }
 
